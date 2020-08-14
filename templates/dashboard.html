@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title></title>
+  <style>
+    body{
+
+      background-image: url({{ url_for('static', filename='bg.jpg') }})
+    }
+      table,
+      th,
+      td {
+        padding: 10px;
+        border: 1px solid black;
+        border-collapse: collapse;
+      }
+    </style>
+</head>
+<body>
+<div class="container" >          
+  <table class="table" >
+    <thead>
+      <tr>
+        <th>sno</th>
+        <th>Gender</th>
+        <th>Age</th>
+        <th>Symptom1</th>
+        <th>Symptom2</th>
+        <th>Symptom3</th>
+        <th>Symptom4</th>
+        <th>Symptom5</th>
+        <th>Symptom6</th>
+        <th>Symptom7</th>
+        <th>Disease</th>
+      </tr>
+    </thead>
+    <tbody>
+      {% for i in  data%}
+      <tr>
+        <td>{{i.sno}}</td>
+        <td>{{i.Gender}}</td>
+        <td>{{i.Age}}</td>
+        <td>{{i.Symptom1}}</td>
+        <td>{{i.Symptom2}}</td>
+        <td>{{i.Symptom3}}</td>
+        <td>{{i.Symptom4}}</td>
+        <td>{{i.Symptom5}}</td>
+        <td>{{i.Symptom6}}</td>
+        <td>{{i.Symptom7}}</td>
+        <td>{{i.Disease}}</td>
+
+      </tr>
+      {% endfor %}
+    </tbody>
+  </table>
+</div>
+<hr>
+<a href="/logout"><button class="btn btn-primary">Logout</button></a>
+</body>
+</html>
