@@ -1,4 +1,4 @@
-## Disease-Prediction-system-using-Machine-Learning-and-Flask [![](https://img.shields.io/github/license/sourcerer-io/hall-of-fame.svg?colorB=ff0000)]  
+## Disease-Prediction-system-using-Machine-Learning-and-Flask 
 ### Code Requirements
 Python Version > 3.5
 
